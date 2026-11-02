@@ -1,11 +1,11 @@
-# chipadapt_jd171
+# gradient_accumulation_batch_ratio_calc
 
 **算出推理芯片适配工程师·梯度累积与有效批量里各项的占比与比值。**
 
-`chipadapt_jd171` —— 从输入中抽取数值，计算推理芯片适配工程师·梯度累积与有效批量相关的比值与占比，分母为零时明确报错
+`gradient_accumulation_batch_ratio_calc` —— 从输入中抽取数值，计算推理芯片适配工程师·梯度累积与有效批量相关的比值与占比，分母为零时明确报错
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`chipadapt_jd171.py` 拷走就能用
+- 单文件，`gradient_accumulation_batch_ratio_calc.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install trinholoy-chipadapt_jd171
+pip install trinholoy-gradient_accumulation_batch_ratio_calc
 ```
 
 装完直接用命令名调用：
 
 ```bash
-chipadapt_jd171 --help
+gradient_accumulation_batch_ratio_calc --help
 ```
 
-也可以不用安装，直接把 `chipadapt_jd171.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `gradient_accumulation_batch_ratio_calc.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ chipadapt_jd171 --help
 ## 用法
 
 ```bash
-python chipadapt_jd171.py --file input.txt
-python chipadapt_jd171.py --text "示例内容"
-python chipadapt_jd171.py --file input.txt --json
+python gradient_accumulation_batch_ratio_calc.py --file input.txt
+python gradient_accumulation_batch_ratio_calc.py --text "示例内容"
+python gradient_accumulation_batch_ratio_calc.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python chipadapt_jd171.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_chipadapt_jd171.py
+python test_gradient_accumulation_batch_ratio_calc.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_chipadapt_jd171.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/trinholoy/chipadapt_jd171>
+- GitHub 仓库：<https://github.com/trinholoy/gradient_accumulation_batch_ratio_calc>
 
 ---
 
@@ -79,7 +79,7 @@ python test_chipadapt_jd171.py
 trinholoy 做推理芯片适配工程师·梯度累积与有效批量相关的问题，方向对标快手的资深推理芯片适配工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://trinholoy.github.io>
-- 仓库：<https://github.com/trinholoy/chipadapt_jd171>
+- 仓库：<https://github.com/trinholoy/gradient_accumulation_batch_ratio_calc>
 
 ## 许可
 
